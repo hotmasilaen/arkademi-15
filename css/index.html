@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS</title>
+    <style>
+        h1{
+            color: #006cbb;
+        }
+
+        .btn-orange{
+            background-color: #ff8017;
+            color: white;
+            padding: 20px;
+            border: none;
+        }
+
+        .rounded{
+            border-radius: 10px;
+        }
+
+        #masuk{
+            border: 2px solid #006cbb;
+            padding: 20px;
+            background-color: white;
+            color: #006cbb;
+        }
+
+        .container{
+            background-image: url("https://arkademi.com/_next/static/media/bg-container.ebe0c1e0.webp");
+            /* background-image: url("https://arkademi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon-pendidikan.dbe4b38a.webp&w=1920&q=75"); */
+            display: flex;
+            padding: 5rem;
+            background-repeat: no-repeat;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+        }
+
+        .text-right{
+            text-align: right;
+        }
+
+        h3, p{
+            margin-right: 5rem;
+        }
+
+        .bg-blue{
+            background-color: #035fab;
+            height: 300px;
+        }
+        .blur{
+            position: relative;
+        }
+        .blur > img{
+            filter: blur(7px);
+        }
+        /* .box{
+            width: 100px;
+            height: 100px;
+            background-color: #ff8017;
+            transition: width 2s, height 2s, background-color 3s, border 2s;
+            transition: all 2s;
+            transition-delay: 2s;
+        }
+
+        .box:hover{
+            width: 300px;
+            height: 300px;
+            background-color: #006cbb;
+            border: 2px solid black;
+        } */
+
+        .box{
+            /* animation: animasiKotak 2s ease 3 alternate forwards running ; */
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: 3;
+            animation-direction: normal;
+            animation-fill-mode: both;
+            animation-play-state: running;
+            animation-name: animasiKotak;
+        }
+
+        @keyframes animasiKotak {
+            from{
+                width: 100px;
+                height: 100px;
+                background-color: #ff8017;  
+            }
+            to {
+                width: 300px;
+                height: 300px;
+                background-color: #006cbb;
+                border: 2px solid black;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <!-- <div class="blur">
+        <img src="https://png.pngtree.com/background/20230426/original/pngtree-dahlia-hd-wallpaper-free-3d-hd-floral-picture-image_2493742.jpg" />
+    </div> -->
+    <div class="bg-blue"></div>
+    <div class="container">
+        <div class="text-right">
+            <h3>Fleksibilitas waktu belajar</h3>
+            <p>Belajar 100% online lewat video ajar kualitas tinggi di platform pendidikan vokasi terbaik di Indonesia. Belajar kapan
+            saja dan dimana saja.</p>
+        </div>
+        <div>
+            <img src="https://arkademi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fflek.b6161662.webp&w=828&q=75" />
+        </div>
+    </div>
+    <h1>Tingkatkan Karier Profesionalmu</h1>
+    <button class="btn-orange rounded">Lihat yang Sesuai untuk Karirmu</button>
+    <button id="masuk">Masuk</button>
+    <h1>Lembaga Pelatihan Resmi</h1>
+    <div class="btn-orange">INI TEST 1</div>
+</body>
+</html>

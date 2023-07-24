@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JS</title>
+</head>
+<body>
+    <p id="root"></p>
+    <script>
+        // const nama = 'Farhan';
+        const umur = 23;
+        let alamat = 'Jakarta';
+        alamat = 'Medan';
+        // console.log('Alamat: ' + alamat);
+        // alert(alamat);
+        document.getElementById('root').innerHTML = 'Alamat: ' + alamat;
+
+        // console.log('Tipe data alamat: ' + typeof alamat);
+        // console.log('Tipe data umur: ' + typeof umur);
+
+        const number1 = 25;
+        const number2 = 25;
+        const hasil = number1 * number2;
+        // console.log('Hasil: ' + hasil);
+
+        const nama = 'Farhan';
+        // console.log(nama == 'Farhan');
+
+        const username = 'hotmaS';
+        // console.log(username == 'hotmasilaen');
+
+        // console.log(number1 == number2);
+        // console.log(number1 == number2);
+        console.log(number1 != number2);
+        console.log(number1 !== number2);
+
+        const str1 = "This is a \n paragraph of text.";
+        console.log(str1.length);
+
+        const noHP = "+6282164756384";
+        console.log(noHP.slice(3, 14));
+        console.log(noHP.replace("+62", "0"));
+
+        if (username == 'hotma'){
+            console.log('Kamu berhasil login!');
+        }else{
+            console.log('Username salah');
+        }
+
+        const nilai = 60;
+        if (nilai >= 90) {
+            console.log('Kamu Lulus');
+        } else if (nilai == 80) {
+            console.log('Belajar lebih giat');
+        }else{
+            console.log('Kamu tidak lulus');
+        }
+
+        const day = 6;
+        switch (day) {
+            case 1:
+                console.log('Hari ini hari senin');
+                break;
+            case 2:
+                console.log('Hari ini hari selasa');
+                break;
+            case 3:
+                console.log('Hari ini hari rabu');
+                break;
+            case 4:
+                console.log('Hari ini hari kamis');
+                break;
+            case 5:
+                console.log('Hari ini hari jumat');
+                break;
+            default:
+                console.log('Hari ini weekend');
+                break;
+        }
+
+        for (var i = 1; i <= 5; i++){
+            console.log('Number: '+ i);
+        }
+    </script>
+</body>
+</html>
